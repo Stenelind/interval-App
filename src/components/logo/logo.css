@@ -1,0 +1,54 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100vw;  
+    height: 100vh;
+}
+
+.logo_header {
+    width: 111px;
+    height: 25px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.83px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: .4rem;
+    color: #FFFFFF;
+}
+
+.logo_text {
+    width: 184px;
+    height: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18.12px;
+    text-align: center;
+    margin: .2rem;
+    color: #FFFFFF;
+}
+
+@keyframes rotateAndScale {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(180deg) scale(1.3);
+    }
+}
+
+.logo_img {
+    transition: transform 0.8s ease; 
+}
+
+.logo_img:hover {
+    animation: rotateAndScale 1s linear;
+}
+
